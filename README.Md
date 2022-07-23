@@ -54,6 +54,13 @@ To compile the proto file and generate code:
  (Refer chat.pb.go for available methods and data structures)
 
 
+6. Streaming is possible using the multiplexing capability provided by http2 
+
+
+Server Streaming RPC: The client sends a single request and the server can send back multiple responses (Ex: The server fetches data in parts and returns it to client soon as it is available)
+Client Streaming RPC: Where the client sends multiple requests and the server only sends back a single response ( Ex. client uploads a large file in parts to the server) 
+Bidirectional Streaming RPC: Where both the client and server send messages to each other at the same time without waiting for a response.
+
 References
 
 * https://tutorialedge.net/golang/go-grpc-beginners-tutorial/
