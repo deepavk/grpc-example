@@ -5,7 +5,7 @@ With gRPC we can define our service once in a .proto file and implement clients 
 
 Protocol buffers allow serialization and deserialization of structured data, with the goal to provide a faster way to make systems communicate due to optimized serialization and deserialization
 
-Protobuf is a binary message format crafted by Google and is efficient compared to other message formats like JSON & XML
+Protobuf is a binary message format, and because it is in binary, serialization and de-serialization is fast and the size of the message is lower than JSON & XML.
 
 Once you've defined your messages, you run the protocol buffer compiler for your application's language on your .proto file to generate data access classes for the client and server 
 
