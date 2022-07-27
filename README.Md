@@ -1,6 +1,7 @@
 ### Example grpc chat client-server 
 
-gRPC uses HTTP/2 for transport and protocol Buffers as the interface description language. 
+gRPC uses HTTP/2 for transport and protocol Buffers as the interface description language. HTTP/2 is multiplexed and it can support multiple requests in parallel over a single TCP connection.
+
 With gRPC we can define our service once in a .proto file and implement clients and servers. 
 
 Protocol buffers allow serialization and deserialization of structured data, with the goal to provide a faster way to make systems communicate due to optimized serialization and deserialization
